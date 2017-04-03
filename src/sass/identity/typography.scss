@@ -1,0 +1,94 @@
+$base-font: 'Raleway', sans-serif;
+$head-font: 'Patua One', cursive;
+
+h1,
+h2 {
+  margin: 0;
+  font-family: $head-font;
+  font-weight: 400;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $base-font;
+  font-weight: 400;
+}
+
+body,
+p {
+  margin: 0;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
+a,
+i {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  padding-bottom: $gutter / 2;
+  font-size: 36px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h3 {
+  font-family: $base-font;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+@media all and (min-width: 37.5rem) {
+  h1 {
+    padding-bottom: $gutter;
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  body,
+  p {
+    font-size: 18px;
+  }
+}

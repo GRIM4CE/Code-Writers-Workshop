@@ -1,0 +1,31 @@
+.price-display-component {
+  margin: $gutter;
+  margin-top: $gutter * 3;
+  padding: $gutter;
+  border-radius: 5px;
+  background-color: $white;
+  color: $black;
+
+  .price {
+    margin: 0;
+    padding: $gutter;
+    color: $primary;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .price-date,
+  .price-label {
+    margin: 0;
+    color: $shade700;
+    font-family: $base-font;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .get-notified-button {
+    margin: $gutter * 2 auto $gutter;
+  }
+}

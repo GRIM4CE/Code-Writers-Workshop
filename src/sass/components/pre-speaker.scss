@@ -1,0 +1,40 @@
+.talk-sugestions-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: $gutter * 2;
+
+  .subheading {
+    flex: 1 100%;
+    margin: 0;
+    margin-bottom: $gutter;
+  }
+}
+
+.talk-sugestions-list {
+  flex: 1 100%;
+  padding: 0 $gutter * 2;
+
+  li {
+    padding: $gutter / 2 0;
+    padding-left: $gutter / 2;
+    line-height: 1.4;
+    list-style: initial;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .talk-sugestions-container {
+    .subheading {
+      margin-bottom: $gutter;
+    }
+  }
+
+  .talk-sugestions-list {
+    flex: 1 40%;
+
+    li {
+      padding: $gutter 0;
+      padding-left: $gutter;
+    }
+  }
+}

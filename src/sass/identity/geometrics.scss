@@ -1,0 +1,10 @@
+$gutter: 1rem;
+$lesser-section-gutter: $gutter $gutter * 6;
+
+%section-gutter {
+  padding: $gutter * 3 $gutter * 1.5;
+
+  @media all and (min-width: 37.5rem) {
+    padding: $gutter * 6;
+  }
+}

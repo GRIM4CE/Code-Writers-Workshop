@@ -1,0 +1,24 @@
+.events-home-background {
+  background-image: url('https://cdn2.hubspot.net/hubfs/482737/Codewriters%20Workshop/background-images/background.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: $white;
+
+  &.section-container {
+    padding-top: 3rem;
+  }
+
+  h1 {
+    padding: $gutter * 3 0 0;
+    font-size: 28px;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

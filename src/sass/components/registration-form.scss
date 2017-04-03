@@ -1,0 +1,88 @@
+.registration-form {
+  .registration-text-container {
+    flex: 1 100%;
+    padding: $gutter;
+
+    .registration-text {
+      max-width: 500px;
+      margin: 0 auto;
+      color: $shade500;
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .registration-callout-text {
+      max-width: 500px;
+      margin: 1rem auto .5rem;
+      text-align: center;
+    }
+  }
+
+  .hbspt-form {
+    padding: $gutter;
+  }
+
+  .hs-form {
+    .hs-form-field {
+      padding-bottom: 1.5rem;
+      color: $black;
+      font-family: $base-font;
+    }
+
+    .hs-input {
+      width: 100% !important;
+      height: 40px;
+      margin-top: .25rem;
+      padding: $gutter;
+      border: 1px solid $shade200;
+      border-radius: 5px;
+      font-family: $base-font;
+      font-size: 16px;
+    }
+
+    .hs-form-checkbox-display {
+      display: flex;
+      align-items: center;
+
+      .hs-input {
+        width: auto !important;
+        margin-right: 1rem;
+      }
+    }
+
+    .hs-error-msgs {
+      padding-top: .75rem;
+      color: $error;
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+
+  .hs-button {
+    width: 100%;
+    padding: .5em .8em;
+    border: 0;
+    border-radius: 5px;
+    background-color: $nvite-form-submission-button;
+    color: $white;
+    font-size: 22px;
+    text-shadow: 1px 1px 0 rgba($black, .05);
+    box-shadow: 0 2px 4px rgba($black, .1);
+    cursor: pointer;
+    appearance: none;
+
+    &:hover {
+      background-color: $nvite-form-submission-button-light;
+    }
+  }
+}
+
+.nvite-registration {
+  width: 100% !important;
+}
+
+@media all and (min-width: 37.5rem) {
+  .nvite-registration {
+    width: 500px !important;
+  }
+}

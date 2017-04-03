@@ -1,0 +1,16 @@
+.cfp-registration {
+  @extend %button;
+  margin: $gutter auto $gutter + 1.5;
+}
+
+.cfp-header {
+  margin-bottom: $gutter;
+}
+
+p.cfp-diversity-statement {
+  margin: $gutter 0 0;
+  color: $shade500;
+  font-family: $base-font;
+  font-size: 14px;
+  line-height: 1.6;
+}

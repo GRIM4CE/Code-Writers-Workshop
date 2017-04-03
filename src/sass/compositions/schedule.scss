@@ -1,0 +1,214 @@
+.schedule {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.schedule-day {
+  width: 100%;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.schedule-disclaimer {
+  padding: 1rem;
+}
+
+.panel-spacer {
+  width: 100%;
+  height: 0;
+  margin: 1.5rem 0 0;
+  border: 1px solid $white;
+}
+
+.event-day {
+  margin: 1.5rem 0 .75rem;
+  color: $black;
+  font-family: $head-font;
+  font-size: 24px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.disclaimer {
+  font-size: 10px;
+}
+
+// Schedule Panels
+.panel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: $white;
+}
+
+.panel {
+  flex-basis: 100%;
+  margin: .5rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  box-shadow: 0 2px 5px rgba($shadow-color, .3);
+
+  &:nth-child(odd) {
+    background-color: $primary;
+  }
+
+  &:nth-child(even) {
+    background-color: $primary-dark;
+  }
+
+  &.break {
+    background-color: $primary-light;
+  }
+
+  span {
+    display: block;
+    margin-top: .5rem;
+    font-size: 14px;
+
+    &.disclaimer {
+      display: inline-block;
+    }
+  }
+
+  a {
+    color: $secondary;
+
+    &:hover {
+      color: $secondary-light;
+    }
+  }
+}
+
+.breakout {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+
+  .panel-header {
+    background-color: $primary-light;
+  }
+
+  .panel {
+    flex: 1 100%;
+  }
+}
+
+.talk-title {
+  margin: 0;
+  font-size: 20px;
+  text-shadow: 0 1px 1px rgba($shadow-color, .4);
+}
+
+.talk-speaker {
+  margin: .5rem 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 0 1px 1px rgba($shadow-color, .4);
+}
+
+.read-more-text {
+  margin-top: 1rem;
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-shadow: 0 1px 1px rgba($shadow-color, .4);
+  }
+
+  &[data-state="open"] {
+    display: block;
+  }
+
+  &[data-state="closed"] {
+    display: none;
+  }
+}
+
+.read-more-button {
+  @extend %button;
+  margin: $gutter * 2 auto 0;
+}
+
+$skills-panel-color: #ba688b;
+$skills-panel-odd-color: #833265;
+$skills-panel-head-color: #741751;
+
+$team-panel-color: #9968ba;
+$team-panel-odd-color: #623283;
+$team-panel-head-color: #551a7d;
+
+$keynote-panel-color: #ba687e;
+$keynote-panel-odd-color: #833241;
+$keynote-panel-head-color: #7d1a20;
+
+.career-skills-track {
+  .panel-header {
+    background-color: $skills-panel-head-color !important;
+  }
+
+  .panel {
+    &:nth-child(odd) {
+      background-color: $skills-panel-color;
+    }
+
+    &:nth-child(even) {
+      background-color: $skills-panel-odd-color;
+    }
+  }
+}
+
+.team-lead-tech-track {
+  .panel-header {
+    background-color: $team-panel-head-color !important;
+  }
+
+  .panel {
+    &:nth-child(odd) {
+      background-color: $team-panel-color;
+    }
+
+    &:nth-child(even) {
+      background-color: $team-panel-odd-color;
+    }
+  }
+}
+
+.keynote-track {
+  .panel-header {
+    background-color: $keynote-panel-head-color !important;
+  }
+
+  .panel {
+    &:nth-child(odd) {
+      background-color: $keynote-panel-color;
+    }
+
+    &:nth-child(even) {
+      background-color: $keynote-panel-odd-color;
+    }
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  // min-width: 600px
+
+  .breakout-panel-2 {
+    flex-basis: 49%;
+  }
+
+  .breakout-panel-3 {
+    flex-basis: 32%;
+  }
+
+  .schedule-disclaimer {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+  }
+}

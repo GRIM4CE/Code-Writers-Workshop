@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: $gutter;
+  background-color: $header-color;
+  z-index: 10;
+
+  .logo {
+    display: block;
+    max-height: 60px;
+    margin: 0 2rem;
+    text-align: center;
+  }
+
+  .cfp-button {
+    position: relative;
+    max-width: 300px;
+    height: 40px;
+    margin: 0;
+    padding: 5px 3.4em 5px 27px;
+    border-radius: 5px;
+    outline: 0;
+    background-color: $secondary;
+    color: $white;
+    text-shadow: 1px 1px 0 rgba($black, .05);
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba($black, .1);
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: $secondary-light;
+      color: $white;
+    }
+
+    .cfp-glyph-container {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      align-items: center;
+      height: 40px;
+      padding: .7em .8em;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: rgba($black, .25);
+    }
+  }
+
+  nav {
+    margin-left: auto;
+
+    a {
+      color: $white;
+    }
+  }
+}
