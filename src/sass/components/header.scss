@@ -13,18 +13,12 @@ header {
   background-color: $header-color;
   z-index: 10;
 
-  .logo {
-    display: block;
-    max-height: 60px;
-    margin: 0 2rem;
-    text-align: center;
-  }
-
   .cfp-button {
     position: relative;
     max-width: 300px;
     height: 40px;
     margin: 0;
+    margin-left: auto;
     padding: 5px 3.4em 5px 27px;
     border-radius: 5px;
     outline: 0;
@@ -52,14 +46,6 @@ header {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       background: rgba($black, .25);
-    }
-  }
-
-  nav {
-    margin-left: auto;
-
-    a {
-      color: $white;
     }
   }
 }
