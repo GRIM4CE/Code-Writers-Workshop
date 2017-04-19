@@ -1,9 +1,14 @@
+.header-container {
+  height: 55px;
+}
+
 header {
   display: flex;
   position: fixed;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  height: 55px;
   padding: $gutter;
   background-color: $header-color;
   z-index: 10;

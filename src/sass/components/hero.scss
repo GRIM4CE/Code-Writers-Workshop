@@ -23,6 +23,7 @@
 }
 
 .hero-background {
+  min-height: calc(100vh - 55px) !important;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -41,6 +42,7 @@
 }
 
 .hero-blackout {
+  min-height: calc(100vh - 55px) !important;
   padding: 50px 0;
 }
 
@@ -66,5 +68,12 @@
         margin-top: 3rem;
       }
     }
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
