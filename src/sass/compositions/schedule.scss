@@ -201,6 +201,9 @@ $keynote-panel-head-color: #7d1a20;
 
 @media all and (min-width: 37.5rem) {
   // min-width: 600px
+  .breakout-panel-1 {
+    flex-basis: 100%;
+  }
 
   .breakout-panel-2 {
     flex-basis: 49%;
@@ -208,6 +211,14 @@ $keynote-panel-head-color: #7d1a20;
 
   .breakout-panel-3 {
     flex-basis: 32%;
+  }
+
+  .breakout-panel-4-6 {
+    flex-basis: 59%;
+  }
+
+  .breakout-panel-2-6 {
+    flex-basis: 39%;
   }
 
   .schedule-disclaimer {
