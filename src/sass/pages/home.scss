@@ -1,0 +1,8 @@
+.home-hero {
+  background-color: $primary;
+  color: $white;
+
+  &.hero {
+    padding-bottom: 0;
+  }
+}
