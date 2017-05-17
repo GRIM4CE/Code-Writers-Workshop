@@ -35,7 +35,7 @@ function appInit() {
   }
 
   // Init SVG
-  if (document.querySelectorAll(".featured-city-icon")) {
+  if (document.querySelector(".featured-city-icon")) {
     new SVG();
   }
 }
