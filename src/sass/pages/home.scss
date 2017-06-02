@@ -1,8 +1,35 @@
-.home-hero {
-  background-color: $primary;
-  color: $white;
+.home-page {
+  background-color: $white;
 
-  &.hero {
-    padding-bottom: 0;
+  .header {
+    position: relative;
+    height: 120px;
+    background-color: $black;
+  }
+
+  .header-logo-container {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 275px;
+    padding: 1.5rem 3rem;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    background-color: $black;
+  }
+
+  .header-logo {
+    img {
+      width: 100% !important;
+    }
+  }
+
+  .header-container {
+    height: 0;
+  }
+
+  .home-hero {
+    background-color: $primary;
+    color: $white;
   }
 }
