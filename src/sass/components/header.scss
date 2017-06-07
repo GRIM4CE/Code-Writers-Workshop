@@ -48,4 +48,10 @@ header {
       background: rgba($black, .25);
     }
   }
+
+  .sold-out {
+    margin-right: 1rem;
+    margin-left: auto;
+    color: $white;
+  }
 }

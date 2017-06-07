@@ -73,6 +73,12 @@ h4 {
   font-size: 18px;
 }
 
+.sold-out {
+  margin: .5rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 @media all and (min-width: 37.5rem) {
   h1 {
     padding-bottom: $gutter;
