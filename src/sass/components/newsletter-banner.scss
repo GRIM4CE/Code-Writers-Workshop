@@ -11,6 +11,19 @@
   }
 
   form {
+    display: flex;
+    align-items: center;
+
+    .hs_submit {
+      margin-left: 1rem;
+    }
+
+    .hs-button {
+      @extend %button;
+      margin: 0;
+      padding: .25rem 1rem;
+    }
+
     label {
       display: none;
     }
