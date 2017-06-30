@@ -5,6 +5,7 @@
     position: relative;
     height: 120px;
     background-color: $black;
+    z-index: 10;
   }
 
   .header-logo-container {
@@ -31,5 +32,9 @@
   .hero {
     background-color: $primary;
     color: $white;
+  }
+
+  .hero-opacity {
+    background-color: rgba($primary, .6);
   }
 }

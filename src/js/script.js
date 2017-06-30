@@ -1,14 +1,14 @@
 'use strict';
-import Navigation from './components/navigation';
+import NewsletterBanner from './components/newsletter';
 import Registration from './components/registration';
 import Speaker from './components/speaker';
 import ReadMore from './components/readmore';
 import SVG from './components/svg-import';
 
 function appInit() {
-  // Init Mobile Nav
-  if (document.querySelector(".mobile-hamburger-button-container")) {
-    const navigation = new Navigation();
+  // Init Newsletter Banner
+  if (document.getElementById('newsletter-banner')) {
+    const newsletterBanner = new NewsletterBanner();
   }
 
   // Create Registration Form
