@@ -18,11 +18,13 @@
 @import 'components/newsletter-banner';
 @import 'components/footer';
 
-@import 'compositions/section';
 @import 'compositions/events-home';
 @import 'compositions/schedule';
 @import 'compositions/location';
 @import 'compositions/popup-form';
 @import 'compositions/sponsors';
+
+@import 'layouts/section-backgrounds';
+@import 'layouts/single-column';
 
 @import 'pages/home';

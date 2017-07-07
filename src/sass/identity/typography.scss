@@ -1,6 +1,11 @@
 $base-font: 'Raleway', sans-serif;
 $head-font: 'Patua One', cursive;
 
+html,
+body {
+  font-size: 16px;
+}
+
 h1,
 h2 {
   margin: 0;
@@ -17,12 +22,10 @@ h6 {
   font-weight: 400;
 }
 
-body,
 p {
   margin: 0;
   font-family: $base-font;
   font-size: 16px;
-  line-height: 1.4;
 }
 
 a {
@@ -50,38 +53,26 @@ li {
 }
 
 h1 {
-  padding-bottom: $gutter / 2;
   font-size: 36px;
-  line-height: 1.4;
   text-align: center;
 }
 
 h2 {
-  margin-bottom: 1rem;
   font-size: 24px;
-  line-height: 1.4;
   text-align: center;
 }
 
 h3 {
   font-family: $base-font;
   font-size: 24px;
-  line-height: 1.4;
 }
 
 h4 {
   font-size: 18px;
 }
 
-.sold-out {
-  margin: .5rem 0;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 @media all and (min-width: 37.5rem) {
   h1 {
-    padding-bottom: $gutter;
     font-size: 56px;
   }
 
@@ -93,8 +84,8 @@ h4 {
     font-size: 24px;
   }
 
-  body,
   p {
     font-size: 18px;
+    line-height: 1.8;
   }
 }

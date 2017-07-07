@@ -1,10 +1,5 @@
-.header {
-  transform: translateY(60px);
-}
-
 .newsletter-banner {
-  display: flex;
-  position: fixed;
+  display: none;
   top: 0;
   align-items: center;
   width: 100%;
@@ -14,10 +9,6 @@
   background-color: $secondary-light;
   color: $white;
   z-index: 20;
-
-  &[data-state="closed"] {
-    position: relative;
-  }
 
   form {
     display: flex;
@@ -54,5 +45,11 @@
 
   i {
     margin-left: auto;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .newsletter-banner {
+    display: flex;
   }
 }
